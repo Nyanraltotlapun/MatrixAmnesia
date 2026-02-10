@@ -1,6 +1,14 @@
 ## MatrixAmnesia
 MatrixAmnesia is a simple script for removing user messages from Matrix room
 
+It intended for user who wants to delete his messages from a chatroom.
+So script makes list of message ids from user, and then sends "redact" request for each message with specified timeout (so server won't ban or kik user).
+
+Server receiving this request should clear message content.
+
+I wanted to clean my messages from one chat room, but was unable to find the way to do it...
+So, I made this script.
+
 It depends on matrix-nio python lib.
 
 ```commandline
